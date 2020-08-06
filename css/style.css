@@ -9,11 +9,14 @@ li{list-style: none;}
 .gnb span{display: block; margin-left: 40px; margin-top:-25px; font-weight: 800;}
 
 
-.banner_wrap{box-sizing: border-box; padding-top: 60px; width: 100%; height: 100vh; overflow: hidden;}
-.banner_img{position: relative; width: 100%; height: 100%; background: skyblue;} 
 
-.banner_img img{width:100%; margin-top: -100px;}
-.banner_btn{border-bottom: 1px solid rgb(196, 196, 196); position: absolute; height: 60px; width: 100%; background: #fff; bottom: 0; text-align: center;}
+.banner_wrap{position: relative; box-sizing: border-box; padding-top: 60px; width: 100%; max-height:100vh; height: auto; overflow: hidden;}
+.banner_img{ background: rebeccapurple; width: 100%; height: auto; overflow: hidden;} 
+.banner_img img{display: block; width: 100%; height: auto;}
+
+
+
+.banner_btn{position: absolute; bottom: 0;  height: 60px; width: 100%; background: #fff; text-align: center;}
 .banner_btn i{font-size: 30px; margin-top: 15px;}
 
 .text_info{text-align: center; margin-top: 100px; height: 300px; width: 100%;}
@@ -40,7 +43,7 @@ li{list-style: none;}
 .mid_img ul li.mid_con2{width: 100%; padding-left: 10px;}
 .mid_img ul li img{display: block; width: 100%;}
 
-.mid_img2{padding: 100px 0 0; display: table; max-width: 1500px; width: 100%; height: 500px; margin: auto;}
+.mid_img2{padding: 100px 0 0; display: table; max-width: 1500px; width: 100%; height: auto; margin: auto;}
 .mid_img2 ul{display: flex; width: 100%;}
 .mid_img2 ul li{width: auto;}
 .mid_img2 ul li.mid_con3{width: auto; margin-right: 10px;}
@@ -48,7 +51,86 @@ li{list-style: none;}
 .mid_img2 ul li img{display: block; width: 100%;}
 
 
-.mid_img3{position: relative; padding-top: 100px; height: 100vh; border: 1px solid red; overflow: hidden;}
-.mid_img3 img{position: absolute; left: 50%; transform: translateX(-50%); }
+.mid_img3{ padding-top: 100px; height: auto; overflow: hidden; }
+.mid_img3 .inner_con{position: relative; background: rebeccapurple; overflow: hidden; width: 100%; max-height:100vh;}
+.mid_img3 .inner_con img{display: block; margin-top: -10%; width: 100%; height: auto;}
+
+
+.mid_img4{ padding: 100px 0 0;  max-width: 1500px; width: 100%; max-height: 830px; margin: auto; }
+.mid_img4 .mid_inner{display: flex; width: 100%; height: 100%; }
+
+.mid_img4 .mid_con5{position: relative; width: 50%; padding-right: 20px; box-sizing: border-box;}
+.mid_img4 .mid_con5 .text_info2{padding: 0 10%; position: absolute; top: 50%; transform: translateY(-50%); margin: 0;}
+
+.mid_img4 .mid_con5 .text_info2 h1{ color: rgb(177, 28, 28); width: 80%; font-size: 38px; font-weight: 500; letter-spacing: 3px; }
+.mid_img4 .mid_con5 .text_info2 p{width: 85%; letter-spacing: 1px; margin-top: 20px; margin-bottom: 20px;}
+
+
+
+.mid_img4 .inner_con{width: 50%; overflow: hidden; box-sizing: border-box; padding-left: 30px;}
+.mid_img4 .inner_con img{display: block; width: 100%;}
+
+/*------------------------------------------------------------------------------------------*/
+.mid_img5{width: 100%; height: auto; padding: 100px 0 0 0;}
+a{text-decoration: none;}
+
+.background{  background: url(../img/background.jpg); width: 100%; height:auto; padding: 100px 0 70px 0;}
+
+.back_table{display: table; table-layout: fixed; width: 100%;  max-width: 1400px;  margin: 0 auto;}
+
+.con_imgbox_left{padding-left: 5%; display: table-cell; position: relative; vertical-align: middle; text-align: left; color: #fff;}
+.con_imgbox_left img{display: block; width: 55%; padding: 2% 0 5% 0; }
+.con_imgbox_left p{width: 70%;}
+
+
+.action_btn2{margin-top: 20px; position: relative; border: 1px solid rgb(199, 199, 199); background: none; padding:0 50px; min-height: 49px; display: inline-block; overflow: hidden;
+    transition: background .2s ease,color .2s ease,border .2s ease;}
+.action_btn2 span{position: relative; color: #fff; font-size: 18px;   line-height: 49px; font-weight: 600; transition: all .5s;}
+.action_btn2:hover{border: 1px solid rgb(177, 28, 28);}
+.action_btn2:hover:before{transform: none;}
+.action_btn2:hover span{
+    color: rgb(177, 28, 28);
+}
+.action_btn2:before{ content: '';
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff;    transform: translate3d(0,101%,0);
+    transition: transform .6s cubic-bezier(.19,1,.22,1);
+}
+
+.con_imgbox_right{display: table-cell; position: relative; vertical-align: middle; }
+
+.con_imgbox_right .img_left{width: 51%;}
+.con_imgbox_right .img_left img{display: block; width: 100%; display: inline; max-width: 100%; height: auto; }
+
+.con_imgbox_right .img_right{position: absolute; width: 51%; bottom: 0; right: 0; text-align: center; color: #fff; padding: 7% 0;}
+.con_imgbox_right .img_right img{display: block; width: 100%;}
+
+.con_imgbox_right .img_right h1{font-size: 5vw; font-weight: 400;}
+
+.con_imgbox_right .img_right p{display: inline-block;}
+.con_imgbox_right .img_right i{position: absolute; padding: 3px 0; cursor: pointer; margin-left: 5px; transition:all 0.5s;}
+.con_imgbox_right .img_right i:hover{margin-left: 15px;}
+.con_imgbox_right .img_right p:hover:after{ margin-left: 10px;}
+
+
+
+.mid_img6{max-width: 1464px; width: 100%; max-height: 830px; margin: auto; }
+.mid_img6 .mid_inner{padding-bottom: 100px; width: 100%;}
+.mid_img6 .mid_inner .inner_text{text-align: center;}
+.mid_img6 .mid_inner .inner_text a{color: rgb(94, 94, 94); font-weight: bold; border-bottom: 1px solid rgb(201, 200, 200);}
+.mid_img6 .mid_inner .inner_text h1{color: #c40d2e; font-size: 40px; font-weight: 400; letter-spacing: 3px; margin-bottom: 10px;}
+.mid_img6 .mid_inner .info_box{width: 100%;  box-sizing: border-box; margin-top: 30px;}
+.mid_img6 .mid_inner .info_box ul{width: 100%; display: table; table-layout: fixed;}
+.mid_img6 .mid_inner .info_box ul li{display: table-cell; width: auto; height: auto; box-sizing: border-box; padding: 0 12px ;}
+
+
+.mid_img6 .mid_inner .info_box .info_img{position: relative;}
+.mid_img6 .mid_inner .info_box .info_img img{width: 100%;}
+
+
+.mid_img6 .mid_inner .info_box ul li a, h3{color: #c40d2e; min-height: 60px;}
+.mid_img6 .mid_inner .info_box ul li p{color: #555; font-size: 15px;}
+.info_box .info_a{padding: 10px 0 20px 0;}
+.info_box ul li a{font-size: 10px;}
+.info_box ul li h3{font-weight: 300; letter-spacing: .05em}
 
 footer{height: 400px; width: 100%; background: #fff;}
