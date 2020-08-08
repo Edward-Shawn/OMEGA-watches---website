@@ -9,7 +9,10 @@ li{list-style: none;}
 .gnb span{display: block; margin-left: 40px; margin-top:-25px; font-weight: 800;}
 
 
+.banner_wrap{box-sizing: border-box; padding-top: 60px; width: 100%; height: 100vh; overflow: hidden;}
+.banner_img{position: relative; width: 100%; height: 100%; background: skyblue;} 
 
+<<<<<<< .merge_file_a09192
 .banner_wrap{position: relative; box-sizing: border-box; padding-top: 60px; width: 100%; max-height:100vh; height: auto; overflow: hidden;}
 .banner_wrap .banner_inner{display: table;
     table-layout: fixed; position: absolute;  max-width: 1450px; width: 100%; height:calc(100% - 120px); left: 50%; transform: translateX(-50%);}
@@ -36,6 +39,10 @@ li{list-style: none;}
 
 
 .banner_btn{position: absolute; bottom: 0;  height: 60px; width: 100%; background: #fff; text-align: center;}
+=======
+.banner_img img{width:100%; margin-top: -100px;}
+.banner_btn{border-bottom: 1px solid rgb(196, 196, 196); position: absolute; height: 60px; width: 100%; background: #fff; bottom: 0; text-align: center;}
+>>>>>>> .merge_file_a04288
 .banner_btn i{font-size: 30px; margin-top: 15px;}
 
 .text_info{text-align: center; margin-top: 100px; height: 300px; width: 100%;}
@@ -62,7 +69,7 @@ li{list-style: none;}
 .mid_img ul li.mid_con2{width: 100%; padding-left: 10px;}
 .mid_img ul li img{display: block; width: 100%;}
 
-.mid_img2{padding: 100px 0 0; display: table; max-width: 1500px; width: 100%; height: auto; margin: auto;}
+.mid_img2{padding: 100px 0 0; display: table; max-width: 1500px; width: 100%; height: 500px; margin: auto;}
 .mid_img2 ul{display: flex; width: 100%;}
 .mid_img2 ul li{width: auto;}
 .mid_img2 ul li.mid_con3{width: auto; margin-right: 10px;}
@@ -70,6 +77,7 @@ li{list-style: none;}
 .mid_img2 ul li img{display: block; width: 100%;}
 
 
+<<<<<<< .merge_file_a09192
 .mid_img3{ padding-top: 100px; height: auto; overflow: hidden; }
 .mid_img3 .inner_con{position: relative; background: rebeccapurple; overflow: hidden; width: 100%; max-height:100vh;}
 .mid_img3 .inner_con img{display: block; margin-top: -10%; width: 100%; height: auto;}
@@ -151,6 +159,10 @@ a{text-decoration: none;}
 .info_box .info_a{padding: 10px 0 20px 0;}
 .info_box ul li a{font-size: 10px;}
 .info_box ul li h3{font-weight: 300; letter-spacing: .05em}
+=======
+.mid_img3{position: relative; padding-top: 100px; height: 100vh; border: 1px solid red; overflow: hidden;}
+.mid_img3 img{position: absolute; left: 50%; transform: translateX(-50%); }
+>>>>>>> .merge_file_a04288
 
 footer{height: auto; width: 100%; }
 
