@@ -4,9 +4,14 @@ li{list-style: none;}
 
 .gnb{position: fixed; top: 0; width: 100%; height: 60px; background: #fff; z-index: 999; border-bottom: 1px solid rgb(196, 196, 196);}
 .gnb .logo{position: absolute; left: 50%; transform: translateX(-50%); margin-top: 6px;}
-.gnb .menu{margin-top: 15px; margin-left: 50px;  width: 150px; display: inline-block;}
-.gnb .menu i{font-size: 30px; display: block;}
-.gnb span{display: block; margin-left: 40px; margin-top:-25px; font-weight: 800;}
+.gnb .menu{color: #555; margin-top: 15px; margin-left: 50px;  width: 150px; display: flex; align-items: center;}
+.gnb .menu>span{font-weight: bold; padding-left: 15px; transition: all 0.4s;}
+
+.gnb .menu .menu_btn{width:auto; height:auto;  display: inline-block;}
+.gnb .menu .menu_btn span{display: block; width: 20px; border-radius: 1px; height: 2px; background: #555; transition: all 0.4s;}
+.gnb .menu .menu_btn span:nth-child(2){margin: 5px 0;}
+.gnb .menu:hover{color: #c40d2e;}
+.gnb .menu:hover .menu_btn span{background:#c40d2e;}
 
 .banner_wrap{position: relative; box-sizing: border-box; padding-top: 60px; width: 100%; max-height:100vh;  height: auto; overflow: hidden;}
 .banner_wrap .banner_inner{display: table;
