@@ -4,6 +4,7 @@ li{list-style: none;}
 
 
 
+
 .gnb{position: fixed; top: 0; width: 100%; height: 60px; background: #fff; z-index: 999; border-bottom: 1px solid rgb(196, 196, 196);}
 .gnb .logo{position: absolute; left: 50%; transform: translateX(-50%); margin-top: 6px;}
 .gnb .menu{color: #555; margin-top: 15px; margin-left: 50px;  width: 150px; display: flex; align-items: center;}
@@ -17,7 +18,7 @@ li{list-style: none;}
 
 
 
-.menu_wrap{ display: none;  position: fixed; top: 0;  width: 100%; height: 100%; background: rgba(0, 0, 0, 0.192);}
+.menu_wrap{ display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; visibility: visible; background: rgba(0, 0, 0, 0.192);}
 .main_menu{left: -230px; top: 0; position: fixed; width: 210px; height: 100%; background: #fff;  transition: all .6s cubic-bezier(.19,1,.22,1);; box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.575); visibility: visible;}
 
 .main_menu .menu_list{position: absolute; top: 60px; overflow-y: visible; box-sizing: border-box; left: 0; right: 0; bottom: 0; }
