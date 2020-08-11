@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    
 
     $(".menu").click(function(){
         $(".menu_wrap").fadeIn("fast")

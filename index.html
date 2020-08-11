@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7b3294b62f.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="icofont/icofont.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -13,6 +15,15 @@
 
     <header>
         <div class="gnb">
+            <div class="header_menu">
+                <div class="search">
+                    <span><ion-icon name="search-outline"></ion-icon></span>
+                </div>
+                <div class="myPage">
+                    <span>My<i class="icofont-brand-omega"></i></span>
+                </div>
+            </div>
+
             <div class="logo"><img src="img/logo_omega.png" alt="" style="width: 72px; margin-top: 5px;"></div>
             <div class="menu">
                 <div class="menu_btn">
@@ -22,7 +33,7 @@
                 </div>
                 <span>MENU</span>
             </div>
-
+            
             <div class="menu_wrap"></div>
             
                 <div class="main_menu">
@@ -37,14 +48,40 @@
                             <ul>
                                 <li>
                                     <a href="" class="menu_icon">
+                                        <i class="icofont-stopwatch"></i>
                                         <span>THE COLLECTION</span>
                                     </a>
                                 </li>
-                                <li><a href=""><span>PLANET OMEGA</span></a></li>
-                                <li><a href=""><span>NEWS & STORIES</span></a></li>
-                                <li><a href=""><span>STORE LOCATOR</span></a></li>
-                                <li><a href=""><span>CUSTOMER SERVICE</span></a></li>
-                                <li style="padding: 0 20px 0;"><a href=""><span>MORE</span></a></li>
+                                <li>
+                                    <a href="">
+                                        <i class="icofont-brand-omega"></i>
+                                        <span>PLANET OMEGA</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icofont-newspaper"></i>
+                                        <span>NEWS & STORIES</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <ion-icon name="location-outline"></ion-icon>
+                                        <span>STORE LOCATOR</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="far fa-address-card"></i>
+                                        <span>CUSTOMER SERVICE</span>
+                                    </a>
+                                </li>
+                                <li style="padding: 0 20px 0;">
+                                    <a href="">
+                                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        <span>MORE</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -55,21 +92,55 @@
 
 
     <div class="banner_wrap">
-        <div class="banner_inner">
-          
-            <div class="banner_text_wrap">
-                <div class="sain_img">
-                    <img src="img/logo-seamaster-retina_91_1__1.png" alt="">
+        <!-- <div class="banner_slide">
+            <div class="banner_inner">
+                <div class="banner_text_wrap">
+                    <div class="sain_img">
+                        <img src="img/logo-seamaster-retina_91_1__1.png" alt="">
+                    </div>
+                    <p class="tit">DIVER 300M</p>
+                    <p class="sub_tit">007 EDITION</p>
+                    <a href="" class="action_btn3"><span>DISCOVER THE COLLECTION</span></a>
                 </div>
-                <p class="tit">DIVER 300M</p>
-                <p class="sub_tit">007 EDITION</p>
-                <a href="" class="action_btn3"><span>DISCOVER THE COLLECTION</span></a>
             </div>
+            <div class="banner_img">
+                <img src="img/home-se-diver300m-007edition-v2-large_4_5.jpg" alt="">
+            </div>
+            <div class="banner_btn"><i class="fa fa-angle-down"></i></div> 
+        </div> -->
+
+        <!-- <div class="banner_slide">
+            <div class="banner_inner">
+                <div class="banner_text_wrap">
+                    <div class="sain_img">
+                        <img src="img/logo-seamaster-retina_91_1__1.png" alt="">
+                    </div>
+                    <p class="tit" style="font-size: 60px; letter-spacing: 4px;">DIVER 300M</p>
+                    <p class="sub_tit" style="font-size: 20px; letter-spacing: 5px;">MASTER CHRONOMETER CERIFIED</p>
+                    <a href="" class="action_btn3"><span>DISCOVER THE COLLECTION</span></a>
+                </div>
+            </div>
+            <div class="banner_img">
+                <img src="img/home-mc16-sediver300m-large_1.jpg" alt="">
+            </div>
+            <div class="banner_btn"><i class="fa fa-angle-down"></i></div> 
+        </div> -->
+
+        <div class="banner_slide">
+            <div class="banner_inner">
+                <div class="banner_text_wrap">
+                    <div class="sain_img">
+                        <img src="img/logo-constellation-red-retina.png" alt="">
+                    </div>
+                    <p class="tit" style="font-size: 40px; letter-spacing: 1px; color: #555;">LADIES' COLLECTION</p>
+                    <a href="" class="action_btn4"><span style="font-size: 17px; font-weight: 600;">DISCOVER THE COLLECTION</span></a>
+                </div>
+            </div>
+            <div class="banner_img">
+                <img src="img/home-constellation-manhattan-ladies-product2-large.jpg" alt="">
+            </div>
+            <div class="banner_btn"><i class="fa fa-angle-down"></i></div> 
         </div>
-        <div class="banner_img">
-            <img src="img/home-se-diver300m-007edition-v2-large_4_5.jpg" alt="">
-        </div>
-        <div class="banner_btn"><i class="fa fa-angle-down"></i></div>
     </div>
 
 
@@ -393,7 +464,7 @@
 
     </footer>
 
-
+    <script  src = "https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/custom.js"></script>
 </body>
