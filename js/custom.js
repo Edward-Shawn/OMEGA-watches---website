@@ -17,4 +17,33 @@ $(document).ready(function(){
         $(".main_menu").css('left','-230px');
         // $("body").css('overflow-y','unset');
     })
+
+    $(".myPage").mouseenter(function(){
+        $(".open_mypage_wrap").fadeIn("fast")
+        
+    })
+    $(".myPage").mouseleave(function(){
+        $(".open_mypage_wrap").css('display','none');
+    })
+
+    
+    // var slick_li =  $(".slick-dots").find("li");
+
+    // slick_li.click(function(){
+    //     $(slick_li).removeClass();
+    //     $(this).addClass("slick-active");
+    // })
+   
+    $(".indicator_play").click(function(){
+
+        if(!$(this).hasClass("paused")){
+            $(this).addClass("paused");
+        }else{
+            $(this).removeClass("paused");
+        }
+    })
+    
+   
+   
+    
 });
