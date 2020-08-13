@@ -55,6 +55,13 @@ li{list-style: none;}
     background: #ebebeb;
 }
 
+.menu_wrap .sub_menu{z-index: -1; border-left:1px solid rgb(218, 218, 218); left: 0px; width: 210px; height: 100%; top: 0; position: fixed; background: #fff;}
+
+
+
+
+
+
 .header_menu{position: relative; width: auto; height: 60px; float: right; display: flex; margin-right: 50px;}
 
 .header_menu .search{width: auto; display: flex; align-items: center; transform:rotateY(180deg); transform-origin:center top; padding-left: 20px; font-size: 18px; padding-top: 4px; color: rgb(134, 132, 132); transition: all 0.5s;}
@@ -98,7 +105,7 @@ li{list-style: none;}
 .banner_wrap .indicator_wrap{display: flex;}
 .banner_wrap .indicator{position: absolute; width: 100%; bottom: 80px; text-align: center;}
 
-.banner_wrap .indicator .indicator_play{padding-top: 1px; position: relative; width: 26px; line-height: 26px; height: 26px; display: inline-block;  background: none; margin-right: -5px; outline: none; border:none;}
+.banner_wrap .indicator .indicator_play{padding-top: 1px; position: relative; width: 26px; line-height: 26px; height: 26px; display: inline-block;  background: none; margin-right: -5px; outline: none; border:none; }
 .banner_wrap .indicator .indicator_play:before{font-family:FontAwesome;
     content:"\f04c";
     font-size: 12px;
@@ -110,6 +117,45 @@ li{list-style: none;}
     font-size: 10px;
     color: #555;
 }
+
+
+/* 라이트 속성 넣을거  */
+.banner_wrap .indicator.light .indicator_play:before{font-family:FontAwesome;
+    content:"\f04c";
+    font-size: 12px;
+    color: #fff;
+}
+.banner_wrap .indicator.light .indicator_play.paused:before {
+    font-family:FontAwesome;
+    content:"\f04b";
+    font-size: 10px;
+    color: #fff;
+}
+.banner_wrap .indicator.light .slick-dots li button:before{display: block; transform: scale(1); content: ''; position: absolute; width: 9px; height: 9px;  top: 50%; left: 50%; margin: -4px 0 0 -4px; background: #fff; border-radius: 50%; transition: transform .5s cubic-bezier(.19,1,.22,1);}
+
+
+
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4;} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
 
 
 .banner_wrap .indicator .slick-dots{border:none; height: 26px;  vertical-align: bottom; box-sizing: border-box; list-style: none; padding: 0; margin: 0; font-size: 0;}
@@ -161,7 +207,8 @@ li{list-style: none;}
 
 
 .banner_btn{position: absolute; bottom: 0;  height: 60px; width: 100%; background: #fff; text-align: center;}
-.banner_btn i{font-size: 30px; margin-top: 15px;}
+.banner_btn ion-icon{font-size: 20px; margin-top: 20px; transition: all 0.4s; color: #555;}
+.banner_btn:hover ion-icon{margin-top: 25px; color: #c40d2e;}
 
 .text_info{text-align: center; margin-top: 100px; height: 300px; width: 100%;}
 .text_info h1{margin: auto; color: rgb(177, 28, 28); width: 60%; font-size: 40px; font-weight: 500; letter-spacing: 3px;}

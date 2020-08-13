@@ -64,7 +64,7 @@
                 <span>MENU</span>
             </div>
             
-            <div class="menu_wrap"></div>
+            <div class="menu_wrap">
                 <div class="main_menu">
                     <button> 
                         <div class="menu_close">
@@ -115,6 +115,10 @@
                         </div>
                     </nav>
                 </div>
+                <div class="sub_menu">
+                    
+                </div>
+            </div>   
         </div>
     </header>
 
@@ -122,7 +126,7 @@
 
     <div class="banner_wrap">
 
-            <div class="banner_slide">
+            <div class="banner_slide fade">
                 <div class="banner_inner">
                     <div class="banner_text_wrap">
                         <div class="sain_img">
@@ -136,10 +140,10 @@
                 <div class="banner_img">
                     <img src="img/home-mc16-sediver300m-large_1.jpg" alt="">
                 </div>
-                <div class="banner_btn"><i class="fa fa-angle-down"></i></div> 
+                
             </div>
 
-            <div class="banner_slide">
+            <div class="banner_slide fade">
                 <div class="banner_inner">
                     <div class="banner_text_wrap">
                         <div class="sain_img">
@@ -153,10 +157,10 @@
                 <div class="banner_img">
                     <img src="img/home-se-diver300m-007edition-v2-large_4_5.jpg" alt="">
                 </div>
-                <div class="banner_btn"><i class="fa fa-angle-down"></i></div> 
+               
             </div>
 
-            <div class="banner_slide">
+            <div class="banner_slide fade">
                 <div class="banner_inner">
                     <div class="banner_text_wrap">
                         <div class="sain_img">
@@ -169,11 +173,11 @@
                 <div class="banner_img">
                     <img src="img/home-constellation-manhattan-ladies-product2-large.jpg" alt="">
                 </div>
-                <div class="banner_btn"><i class="fa fa-angle-down"></i></div> 
+                
             </div>
-            
+            <div class="banner_btn"><ion-icon name="chevron-down-outline"></ion-icon></div> 
             <div class="indicator_wrap">
-                <div class="indicator">
+                <div class="indicator light">
                     
                     <button type="button" class="indicator_play "></button>
                   
@@ -516,33 +520,55 @@
             var slideIndex = 1;
             showSlides(slideIndex);
 
-        
+            // 인디케이터 작동
             function currentSlide(n) {
                 showSlides(slideIndex = n);
             }
-            
             
             function showSlides(n) {
                 var i;
                 var slides = document.getElementsByClassName("banner_slide");
                 var dots = document.getElementsByClassName("dot");
+                var indicator = document.querySelector(".indicator");
+
+             
+               
+                
 
                 if (n > slides.length) {slideIndex = 1} 
                 
                 if (n < 1) {slideIndex = slides.length}
+
+                if(n == 3){
+                    indicator.classList.remove("light");
+                }else{
+                    indicator.classList.add("light");
+                }
+
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";  
                 }
+
+                // 인디케이터로 제어
                 for (i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" slick-active", "");
                 }
+
                 slides[slideIndex-1].style.display = "block";  
                 dots[slideIndex-1].className += " slick-active";
                 
-              
             }
 
-    
+            function startTimer(){
+            timer = setInterval(function(){
+               
+                showSlides(slideIndex += 1);
+                console.log(showSlides);
+            }, 5000)
+            
+        }
+        startTimer()
+
     </script>
 </body>
 </html>
