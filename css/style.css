@@ -16,6 +16,19 @@ li{list-style: none;}
 }
 
 
+.action_btn6{margin-top: 20px; position: relative;  left: 0; bottom: 0; width: 80%; background: #f7f7f7;  border: 1px solid #ccc;  text-align: center; min-height: 49px; display: inline-block; overflow: hidden;
+    transition: background .2s ease,color .2s ease,border .2s ease;}
+.action_btn6 span{position: relative; color:#555; font-size: 15px; line-height: 49px; font-weight: 600; transition: all .5s;}
+.action_btn6:hover{border: 1px solid rgb(177, 28, 28);}
+.action_btn6:hover:before{transform: none;}
+.action_btn6:hover span{
+    color: #fff;
+}
+.action_btn6:before{ content: '';
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgb(177, 28, 28);     transform: translate3d(0,101%,0);
+    transition: transform .6s cubic-bezier(.19,1,.22,1);
+}
+
 
 .gnb{position: fixed; top: 0; width: 100%; height: 60px; background: #fff; z-index: 999; border-bottom: 1px solid rgb(196, 196, 196);}
 .gnb .logo{position: absolute; left: 50%; transform: translateX(-50%); margin-top: 6px;}
@@ -85,6 +98,60 @@ li{list-style: none;}
     background: #ebebeb;
 }
 .collection2 a span:hover{color: #c40d2e;}
+
+
+.collection3 a{display: block; padding: 18px 0;}
+.collection3 a span:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 12px;
+    margin-left: -6px;
+    margin-top: 35px;
+    height: 2px;
+    background: #ebebeb;
+}
+.collection3 a span:hover{color: #c40d2e;}
+
+
+
+
+.collection4 a{display: block; padding: 10px 0;}
+.collection4 a span:hover{color: #c40d2e;}
+
+.follow_us{margin-top: 35px;}
+.follow_us span{font-size: 14px; font-weight: 600; display: block; padding: 18px 0;}
+.follow_us  span:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 12px;
+    margin-left: -6px;
+    margin-top: -35px;
+    height: 2px;
+    background: #ebebeb;
+}
+
+.sub_menu .follow_wrap{margin: auto; display: table;}
+.sub_menu .follow_wrap ul{width: 180px; padding: 10px 0 20px !important;}
+
+.sub_menu .follow_wrap ul li{ display: inline-block; list-style: none; width: 36px;}
+.sub_menu .follow_wrap ul li a i{font-size: 23px;}
+.sub_menu .follow_wrap ul li a:hover i{color: #c40d2e;}
+
+.our_apps span{display: block; padding: 20px 0; font-size: 14px;}
+.our_apps span:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 12px;
+    margin-left: -6px;
+    margin-top: -35px;
+    height: 2px;
+    background: #ebebeb;
+}
+.our_apps .our_wrap{display: table; margin: auto;}
+.our_apps .our_wrap li{display: inline-block;}
 
 
 .header_menu{position: relative; width: auto; height: 60px; float: right; display: flex; margin-right: 50px;}

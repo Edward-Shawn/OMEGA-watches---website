@@ -51,15 +51,20 @@ $(document).ready(function(){
 
     submenu_enter.click(function(e){
         e.preventDefault();
-
+       
         
-
-        if(!$(submenu).hasClass("on") == true){
-            $(submenu).addClass("on");
-
-        }else{
-            $(submenu).removeClass("on");
+        if(!$(this).hasClass("on")){
+            submenu_enter.removeClass("on");
+            $(this).addClass("on");
+            $(submenu_enter).find("div").removeClass("on");
+            $(this).find("div").addClass("on");
+            
+        }else {
+            $(this).removeClass("on");
+            $(submenu_enter).find("div").removeClass("on");
         }
+        
+       
         
     })
 
