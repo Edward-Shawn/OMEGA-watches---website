@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
     $(".menu").click(function(){
-        $(".menu_wrap").fadeIn("fast")
+        $(".menu_wrap").fadeIn("fast");
         $(".main_menu").css('left','0');
         // $("body").css('overflow-y','hidden')
         $(".menu_wrap").on('scroll mousewheel', function(e){
@@ -13,13 +13,27 @@ $(document).ready(function(){
 
     })
 
-  
+    // $(".menu_wrap").on("click", function(){
+    //     $(".menu_wrap").css('display','none');
+    //     $(".main_menu").css('left','-230px');
+    //     $(".list_menus").removeClass("on");
+    //     $(submenu).removeClass("on");
+    // });
+
+    $(".menu_wrap").click(function(){
+        $(".menu_wrap").css('display','none');
+        $(".main_menu").css('left','-230px');
+        $(".list_menus").removeClass("on");
+        $(submenu).removeClass("on");
+    })
+    
 
     $(".main_menu button").click(function(){
         $(".menu_wrap").css('display','none');
         $(".main_menu").css('left','-230px');
         $(submenu).removeClass("on");
     })
+
 
     $(".myPage").mouseenter(function(){
         $(".open_mypage_wrap").fadeIn("fast")
