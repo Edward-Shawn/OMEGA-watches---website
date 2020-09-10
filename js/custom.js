@@ -82,4 +82,30 @@ $(document).ready(function(){
         
     })
 
+    // email input
+
+    $(".control, .placeholder").click(function(){
+        if($(".submit_box").focus()){
+            $(".placeholder").addClass("on");
+        }
+    })
+   
+       
+        
+ 
+    
+    $(document).click(function(e){
+        if($(e.target).closest(".control, .placeholder").length != 0){
+            return false;
+            
+        }else if(!$(".submit_box").val()){
+            
+            $(".placeholder").removeClass("on");
+        }
+    });
+        
+   
+        
+    
+
 });
