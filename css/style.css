@@ -44,7 +44,7 @@ li{list-style: none;}
 
 
 .menu_wrap{ display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; visibility: visible; background: rgba(0, 0, 0, 0.192);}
-.main_menu{left: -230px;  top: 0; position: fixed; width: 210px; height: 100%; background: #fff; z-index: 999; transition: all .6s cubic-bezier(.19,1,.22,1);; box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.575); visibility: visible; }
+.main_menu{left: -100%;  top: 0; position: fixed; width: 210px; height: 100%; background: #fff; z-index: 999; transition: all .6s cubic-bezier(.19,1,.22,1);; box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.575); visibility: visible; }
 
 .main_menu .menu_list{background: #fff; border-right: 1px solid rgb(218, 218, 218); position: absolute; top: 60px; overflow-y: visible; box-sizing: border-box; left: 0; right: 0; bottom: 0;}
 
@@ -198,7 +198,7 @@ li{list-style: none;}
 .banner_wrap{position: relative; box-sizing: border-box; padding-top: 60px; width: 100%; max-height:100vh;  height: auto; overflow: hidden;}
 .banner_wrap .banner_slide{display: none;}
 .banner_wrap .indicator_wrap{display: flex;}
-.banner_wrap .indicator{position: absolute; width: 100%; bottom: 80px; text-align: center;}
+.banner_wrap .indicator{position: absolute; z-index: 999; width: 100%; bottom: 80px; text-align: center;}
 
 .banner_wrap .indicator .indicator_play{padding-top: 1px; position: relative; width: 26px; line-height: 26px; height: 26px; display: inline-block;  background: none; margin-right: -5px; outline: none; border:none; }
 .banner_wrap .indicator .indicator_play:before{font-family:FontAwesome;
@@ -266,7 +266,7 @@ li{list-style: none;}
 .banner_wrap .indicator .slick-dots li.slick-active button:after{transform: scale(1);}
 
 
-.banner_wrap .banner_inner{display: table;
+.banner_wrap .banner_inner{z-index: 10; display: table;
     table-layout: fixed; position: absolute; max-width: 1450px; width: 100%; height:calc(100% - 120px); left: 50%; transform: translateX(-50%);}
 .banner_wrap .banner_inner .banner_text_wrap{ display: table-cell; position: relative; vertical-align: middle;position: relative; text-align: right; padding-right: 40px;}
 
@@ -292,9 +292,9 @@ li{list-style: none;}
 
 
 
-.banner_img{ background: rebeccapurple; width: 100%; height: auto; overflow: hidden;} 
-.banner_img img{display: block; width: 100%; margin-top: -40px; height: auto;}
-
+.pm-responsive-image{position: relative; _transform: scale(1.15); transition: transform 3s cubic-bezier(.19,1,.22,1) 0s; width: 100%; max-width: 100%; height: auto; display: block;} 
+.pm-responsive-image img{display: block; width: 100%;}
+img.lazyloaded{opacity: 1; transition: opacity .2s;}
 
 
 .action_btn3{margin-top: 20px; position: relative; border: 1px solid rgb(199, 199, 199); background: none; padding:0 40px; min-height: 49px; display: inline-block; overflow: hidden; transition: background .2s ease,color .2s ease,border .2s ease;}
@@ -357,9 +357,10 @@ li{list-style: none;}
 
 
 .mid_img3{position: relative; padding-top: 100px; height: auto; overflow: hidden; }
-.mid_img3 .inner_con{_position: relative; background: rebeccapurple; overflow: hidden; width: 100%; max-height:100vh;}
-.mid_img3 .inner_con img{display: block; margin-top: -10%; width: 100%; height: auto;}
-
+.mid_img3 .inner_con{_position: relative; overflow: hidden; width: 100%; max-height:100vh;}
+.mid_img3 .inner_con img{width: 100%; height: auto;}
+.inner-big{display: block;}
+.inner-small{display: none;}
 
 .mid_img3 .banner_inner{ position: absolute; display: flex;  align-items: center; max-width: 1650px; width: 100%; height:calc(100% - 102px); left: 50%; transform: translateX(-50%);}
 .mid_img3 .banner_inner .dummy_box{width: 50%;  position: relative;}
@@ -393,6 +394,7 @@ li{list-style: none;}
 
 /*------------------------------------------------------------------------------------------*/
 .mid_img5{width: 100%; height: auto; padding: 100px 0 0 0;}
+.mid-small-txt{display: none; color: #fff; text-align: center; width: 90%; margin: 0 auto; padding-top: 20px;}
 a{text-decoration: none;}
 
 .background{  background: url(../img/background.jpg); width: 100%; height:auto; padding: 100px 0 70px 0;}

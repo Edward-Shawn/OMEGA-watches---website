@@ -10,7 +10,11 @@ $(document).ready(function(){
             e.stopPropagation();
             return false;
         })
-
+        $(".main_menu button").css('display','flex');
+        
+    })
+    $(".main_menu button").click(function(){
+        $(this).hide();
     })
 
     // $(".menu_wrap").on("click", function(){
@@ -21,8 +25,9 @@ $(document).ready(function(){
     // });
 
     $(".menu_wrap").click(function(){
+        
         $(".menu_wrap").css('display','none');
-        $(".main_menu").css('left','-230px');
+        $(".main_menu").css('left','0');
         $(".list_menus").removeClass("on");
         $(submenu).removeClass("on");
     })
@@ -30,7 +35,7 @@ $(document).ready(function(){
 
     $(".main_menu button").click(function(){
         $(".menu_wrap").css('display','none');
-        $(".main_menu").css('left','-230px');
+        $(".main_menu").css('left','-100%');
         $(submenu).removeClass("on");
     })
 
