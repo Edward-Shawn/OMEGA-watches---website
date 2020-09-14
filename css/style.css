@@ -346,7 +346,7 @@ img.lazyloaded{opacity: 1; transition: opacity .2s;}
 
 .mid_img{padding: 100px 0 0; display: table;  _max-width: 1200px; width: 70%; height: 500px; margin: auto;}
 .mid_img {width: 100%;}
-#slides{width: auto; height: auto; white-space: nowrap; font-size: 0; transform: translateX(0);}
+#slides{cursor: e-resize; width: auto; height: auto; white-space: nowrap; font-size: 0; transform: translateX(0);}
 
 #slides .mid_con1{width: 100%; box-sizing: border-box; padding:0 10px; display: inline-block;}
 #slides .mid_con2{width: 100%; box-sizing: border-box; padding:0 10px; display: inline-block;}
