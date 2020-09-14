@@ -11,9 +11,9 @@
     /* menu */
     .gnb .menu{margin-left: 26px;}
     .gnb .menu .menu-txt{display: none;}
-    .main_menu{width: 100%; margin-top: 60px; box-shadow: none;}
-
-    .menu_wrap{background: #fff; margin-top: 60px;}
+    .main_menu{width: 100%; margin-top: 60px; box-shadow: none; transition: all 0.3s;}
+    
+    .menu_wrap{background:transparent; margin-top: 60px;}
     .main_menu button{border: none; display: none; background: #fff; margin-left: 19px; position: fixed; z-index: 99; top: 0;  width: auto; left: 6px;}
     .main_menu button .menu_close{margin-left: 0;}
     .main_menu button .menu_close span{font-size: 39px;}
@@ -24,11 +24,11 @@
     .main_menu .menu_list .list_wrap{display: block; padding-top: 0;}
     .main_menu .menu_list ul{display: block;}
     .main_menu .menu_list ul .list_menus{border-bottom: 1px solid rgb(219, 219, 219); display: flex;}
-    .main_menu .menu_list ul .list_menus{padding: 35px 10px;}
+    .main_menu .menu_list ul .list_menus{padding: 30px 10px;}
     .main_menu .menu_list ul .list_menus>a i{width: 50px;}
     .main_menu .menu_list ul .list_menus>a ion-icon{width: 50px;}
     .main_menu .menu_list ul .list_menus>a ion-icon:nth-child(2){margin-left: 10px;}
-    .main_menu .menu_list ul .list_menus a{font-size: 20px; display: flex;}
+    .main_menu .menu_list ul .list_menus a{font-size: 17px; font-weight: 500; display: flex;}
     .main_menu .menu_list ul .list_menus>a:after{display: none;}
 
 
@@ -98,9 +98,9 @@
 
 
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 690px){
     .mid_img3 .banner_inner .banner_text_wrap{padding: 0 25px; width: 60%;}
-   
+    .main_right .action_btn{padding: 0 35px;}
 }
 
 @media screen and (max-width: 640px){
@@ -134,4 +134,59 @@
     .inner-big{display: none;}
     .inner-small{display: block;}
 
+    .footer_main_upper{padding: 0;}
+    .footer_main_table>div{display: unset;}
+    .main_left{display: none;}
+    .main_middle{display: none;}
+    .top_con{display: none;}
+    .btm_con{display: none;}
+    .main_middle{border: none;}
+    .main_right{text-align: center; border: none; }
+    .main_right .action_btn{margin-top: 0; margin: auto;}
+
+    .btm_wrap .btm_left{padding: 0; text-align: center;}
+    .btm_wrap .btm_right{display: none;}
+}
+
+@media screen and (max-width: 400px){
+
+    .main_menu .menu_list ul .list_menus{padding: 23px 10px;}
+    .main_menu .menu_list ul .list_menus a{font-size: 15px;}
+
+    .banner_wrap .banner_inner{bottom: 50px;}
+    .banner_wrap .banner_inner .banner_text_wrap .sain_img{margin-bottom: -10px;}
+    .banner_text_wrap .sain_img img{width: 100px;}
+    .banner_wrap .banner_inner .banner_text_wrap .action_btn3{margin-top: 10px; padding: 0 20px;}
+    .banner_wrap .banner_inner .banner_text_wrap .tit{font-size: 30px;}
+    .banner_wrap .banner_inner .banner_text_wrap .sub_tit.one{font-size: 14px; letter-spacing: 2px;}
+
+
+    .banner_wrap .banner_inner .banner_text_wrap .tit.three{font-size: 20px;}
+    .banner_wrap .banner_inner .banner_text_wrap .action_btn4{padding: 0 20px; margin-top: 10px;}
+
+
+    .text_info h1{font-size: 20px;}
+    .mid_img3 .banner_inner .banner_text_wrap .tit{font-size: 25px;}
+    .mid_img3 .inner_con{max-height: unset; height: auto;}
+    .mid_img3 .inner_con img{width: 160%; position: relative; z-index: -1; left: 50%; transform: translateX(-50%);}
+    .mid_img3 .banner_inner{bottom: 30px;}
+
+    .mid_img4{width: 90%;}
+    .mid_img4 .action_btn{padding: 0 35px;}
+    .mid_img4 .mid_con5 .text_info2 h1{font-size: 25px;}
+
+    .con_imgbox_right .img_right{text-align: left;}
+    .con_imgbox_right .img_right h1{padding-left: 20px;}
+    .con_imgbox_right .img_right p{font-size: 13px; padding-left: 20px;}
+    .con_imgbox_right .img_right i{font-size: 10px; margin-left: -18px; margin-top: 1px;}
+
+    .mid_img4 .mid_con5 .text_info2 h1{letter-spacing: 5px;}
+    .mid_img4 .mid_con5 .text_info2{padding: 0;}
+    .mid_img4 .action_btn{padding:  0 20px;}
+
+    .mid_img6 .mid_inner .info_box ul{width: 400%;}
+
+    footer .news_lt form fieldset{padding-right: 100px;}
+    footer .news_lt form button{width: 100px;}
+    footer .news_lt form .control label span{font-size: 14px;}
 }
