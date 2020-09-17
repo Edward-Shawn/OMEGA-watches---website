@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+   
+
 
     $(".menu").click(function(){
         $(".menu_wrap").fadeIn("fast");
@@ -110,7 +112,35 @@ $(document).ready(function(){
     });
         
    
-        
+
     
+
+    // last slide
+      
+    $(window).resize(function(){
+        var windowWidth = $(window).width();
+          if(windowWidth < 1280){
+           
+            $(".sliders_dot").css('display','block');
+          }else{
+            
+            $(".sliders_dot").css('display','none');
+          }
+    })
+
+        
+    $(".sliders_dot li").click(function(){
+        $(".sliders_dot li").removeClass();
+        if(!$(this).hasClass("active")){
+            $(this).addClass("active");
+        }else{
+            $(this).removeClass("active");
+        }
+    })
+    
+    
+    
+
+
 
 });
