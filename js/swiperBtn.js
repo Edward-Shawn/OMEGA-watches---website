@@ -40,9 +40,3 @@
 
         });
 
-
-        var swiper = new Swiper('.swiper-container2', {
-            slidesPerView: 1,
-            // slidesPerGroup: 1,
-            
-        });

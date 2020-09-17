@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7b3294b62f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="icofont/icofont.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>Document</title>
 </head>
 <body>
+
+
 
     <header>
         <div class="gnb">
@@ -411,24 +412,24 @@
         <a href="" class="action_btn"><span>DISCOVER THE WATCH</span></a>
     </div>
 
-    <div class="mid_img swiper-container2">
-
-        <div id="slides" class="slide-box swiper-wrapper">
-
-            <div class="mid_con1 swiper-slide">
-                <div>
-                    <img src="img/SP-Moonwatch-Alinghi-31192443001002-home1.jpg" alt="">
+    <div class="mid_img">
+        <div id="slides">
+            <div class="slide-box">
+                <div class="mid_con1 slide">
+                    <div>
+                        <img src="img/SP-Moonwatch-Alinghi-31192443001002-home1.jpg" alt="">
+                    </div>
+                    
                 </div>
-                
-            </div>
-            <div class="mid_con2 swiper-slide">
-                <div>
-                    <img src="img/SP-Moonwatch-Alinghi-31192443001002-home2.jpg" alt="">
+                <div class="mid_con2 slide">
+                    <div>
+                        <img src="img/SP-Moonwatch-Alinghi-31192443001002-home2.jpg" alt="">
+                    </div>
                 </div>
             </div>
             
-
         </div>
+        <div class="stop-slide"></div>
     </div>
 
     <div class="text_info">
@@ -583,7 +584,6 @@
                 </ul>
             </div>
         </div>
-        
     </div>
     <ul class="sliders_dot swiper-pagination">
         <li class="active">
@@ -762,63 +762,64 @@
     <script src ="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js "></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/swiperBtn.js"></script>
 
     <script>
  
-            var slideIndex = 1;
-            showSlides(slideIndex);
+        
 
-            // 인디케이터 작동
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // 인디케이터 작동
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slidesAction = document.getElementsByClassName("banner_slide");
+            var dots = document.getElementsByClassName("dot");
+            var indicator = document.querySelector(".indicator");
+
+            if (n > slidesAction.length) {slideIndex = 1} 
             
-            function showSlides(n) {
-                var i;
-                var slidesAction = document.getElementsByClassName("banner_slide");
-                var dots = document.getElementsByClassName("dot");
-                var indicator = document.querySelector(".indicator");
+            if (n < 1) {slideIndex = slidesAction.length}
 
-                if (n > slidesAction.length) {slideIndex = 1} 
-                
-                if (n < 1) {slideIndex = slidesAction.length}
-
-                if(n == 3){
-                    indicator.classList.remove("light");
-                }else{
-                    indicator.classList.add("light");
-                }
-
-                for (i = 0; i < slidesAction.length; i++) {
-                    slidesAction[i].style.display = "none";  
-                }
-
-                // 인디케이터로 제어
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" slick-active", "");
-                }
-
-                slidesAction[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " slick-active";
-                
+            if(n == 3){
+                indicator.classList.remove("light");
+            }else{
+                indicator.classList.add("light");
             }
 
-            function startTimer(){
-            timer = setInterval(function(){
-               
-                // showSlides(slideIndex += 1);
-                console.log(showSlides);
-            }, 5000)
+            for (i = 0; i < slidesAction.length; i++) {
+                slidesAction[i].style.display = "none";  
+            }
+
+            // 인디케이터로 제어
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" slick-active", "");
+            }
+
+            slidesAction[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " slick-active";
             
         }
-        startTimer()
+
+        function startTimer(){
+        timer = setInterval(function(){
+           
+            showSlides(slideIndex += 1);
+            console.log(showSlides);
+        }, 5000)
+        
+    }
+    startTimer()
 
 
 
-    </script>
+</script>
 </body>
 </html>
