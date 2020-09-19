@@ -135,7 +135,8 @@
     .mid_con2 img{width: 100%; display: block;}
 
 
-    #slides{width: 80%; height: auto; white-space: nowrap; font-size: 0; transform: translateX(0);}
+    
+    #slides{width: 80%; height: auto; margin: auto; white-space: nowrap; font-size: 0; transform: translateX(0);}
 
     #slides .mid_con1{width: 100%; box-sizing: border-box; padding:0 10px; display: inline-block;}
     #slides .mid_con2{width: 100%; box-sizing: border-box; padding:0 10px; display: inline-block;}
