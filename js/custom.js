@@ -71,7 +71,7 @@ $(document).ready(function(){
     submenu_enter.click(function(e){
         e.preventDefault();
        
-        if(windowWidth >= 954){
+        if(windowWidth > 960){
                 if(!$(this).hasClass("on")){
                     submenu_enter.removeClass("on");
                     $(this).addClass("on");
@@ -85,9 +85,9 @@ $(document).ready(function(){
             return false;
         }
         
-
-        
     })
+
+    
 
     // email input
 
@@ -134,6 +134,7 @@ $(document).ready(function(){
     $(window).resize(function(){
 
         var windowWidth = $(window).width();
+
           if(windowWidth < 1280){
             $(".sliders_dot").css('display','block');
           }else{
@@ -141,63 +142,15 @@ $(document).ready(function(){
             $(".sliders_dot").css('display','none');
           }
 
-          var submenu_enter = $(".list_menus");
-          var submenu = $(".sub_menu");
+        
       
-
-        if(windowWidth < 954){
-
-            submenu_enter.click(function(){
-                $(this).removeClass("on");
-                $(submenu_enter).find("div").removeClass("on");
-            })
-
-            $(this).removeClass("on");
-            $(submenu_enter).find("div").removeClass("on");
-
-            console.log("small");
-            
-        }else{
-
-            submenu_enter.click(function(){
-                if((submenu_enter).hasClass("on")){
-                    submenu_enter.click(function(){
-                        submenu_enter.removeClass("on");
-                        submenu.removeClass("on");
-        
-                    })
-                   
-                }
-                
-                    submenu_enter.removeClass("on");
-                    $(this).addClass("on");
-                    $(submenu_enter).find("div").removeClass("on");
-                    $(this).find("div").addClass("on");  
-
-                   
-
-            })
-
-       
-           
-        
-            
-
-            
-
-            console.log("big");
-            
+          if(windowWidth < 960){
+            $(".sub_menu").css('display','none');
+          }else{
+            $(".sub_menu").css('display','table');
+          }
           
-        }
-        
-        
-    
-
-
-       
-       
-
-
+         
     })
 
 });
