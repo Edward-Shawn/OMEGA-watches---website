@@ -5,6 +5,16 @@ a{text-decoration: none;}
 li{list-style: none;}
 body,html{overflow-x: hidden;}
 
+.inner-big{display: block; width: 100%;}
+.inner-medium{display: none; width: 115%;}
+.inner-small{display: none; width: 100%;}
+
+.inner-big2{display: block;}
+.inner-small2{display: none;}
+
+
+
+
 .action_btn5{margin-top: 20px; position: absolute;  left: 0; bottom: 0; width: 100%; border: 1px solid #ccc; background: none; text-align: center; min-height: 49px; display: inline-block; overflow: hidden;
     transition: background .2s ease,color .2s ease,border .2s ease;}
 .action_btn5 span{position: relative; color:#555; font-size: 18px;  font-family: 'Jost', sans-serif; line-height: 49px; font-weight: 500; transition: all .5s;}
@@ -200,7 +210,7 @@ body,html{overflow-x: hidden;}
 
 
 .banner_wrap{position: relative; box-sizing: border-box; padding-top: 60px; width: 100%; max-height:100vh;  height: auto; overflow: hidden;}
-.banner_wrap .banner_slide{display: none;}
+.banner_wrap .banner_slide{_display: none;}
 .banner_wrap .indicator_wrap{display: flex;}
 .banner_wrap .indicator{position: absolute; z-index: 100; width: 100%; bottom: 80px; text-align: center;}
 
