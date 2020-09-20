@@ -83,7 +83,7 @@ body,html{overflow-x: hidden;}
 }
 
 
-.list_wrap .list_menus .sub_menu{position: fixed; display: table; width: 235px; height: 100%; opacity: 0; background: #fff; top: 0; left: -235px; z-index: -999;  transition: all 0.3s;}
+.list_wrap .list_menus .sub_menu{position: fixed; display: table; width: 235px; overflow: hidden; height: 100%; opacity: 0; background: #fff; top: 0; left: -400px; z-index: -999;  transition: all 0.3s;}
 .list_wrap .list_menus .sub_menu.on{left: 210px; opacity: 1;}
 .list_wrap .list_menus .sub_menu ul{display: table-cell; vertical-align: middle;}
 .list_wrap .list_menus .sub_menu .sub_list_menu .sub_tit{display: block; padding-bottom: 20px;}
@@ -464,7 +464,9 @@ a{text-decoration: none;}
 
 
 .mid_img6{max-width: 1464px; width: 100%; max-height: 830px; margin: auto; }
-.mid_img6 .mid_inner{padding-bottom: 25px; width: 100%;}
+.mid_img6 .mid_inner{padding-bottom: 25px; width: 100%; position: relative;}
+
+
 .mid_img6 .mid_inner .inner_text{text-align: center;}
 .mid_img6 .mid_inner .inner_text a{color: #555; transition: all 0.4s; font-weight: 500; letter-spacing: 1px;  border-bottom: solid 1px #e5e5e5;}
 .mid_img6 .mid_inner .inner_text a:hover{color: #c40d2e; border-color: #c40d2e;}

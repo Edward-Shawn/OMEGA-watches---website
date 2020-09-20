@@ -2,6 +2,8 @@ $(document).ready(function(){
 
   var windowWidth = $(window).width();
  
+ 
+
   if(windowWidth < 625){
     $("#slidesOff").attr('id','slides');
     $(".stop-slide").css('display','none');
