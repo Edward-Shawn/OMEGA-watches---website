@@ -5,12 +5,12 @@ a{text-decoration: none;}
 li{list-style: none;}
 body,html{overflow-x: hidden;}
 
-.inner-big{display: block; width: 100%;}
-.inner-medium{display: none; width: 115%;}
-.inner-small{display: none; width: 100%;}
+.inner-big{display: block; width: 100%; position: relative; left: 50%; transform: translate(-50%, -5%);}
+.inner-medium{display: none; width: 100%; position: relative; left: 50%; transform: translate(-50%, -5%);}
+.inner-small{display: none; width: 100%; position: relative; left: 50%; transform: translateX(-50%);}
 
-.inner-big2{display: block;}
-.inner-small2{display: none;}
+.inner-big2{display: block; width: 100%; z-index: -1; position: relative; left: 50%; transform: translateX(-50%);}
+.inner-small2{display: none; width: 100%; z-index: -1; position: relative; left: 50%; transform: translateX(-50%);}
 
 
 
