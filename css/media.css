@@ -110,7 +110,9 @@
 }
 
 
-
+@media screen and (max-width: 760px){
+    .header_menu .myPage .open_mypage_wrap .open_mypage{width: auto;}
+}
 
 @media screen and (max-width: 750px){
     .mid_img3 .banner_inner .banner_text_wrap{padding: 0 30px;}
@@ -127,6 +129,14 @@
 }
 
 @media screen and (max-width: 640px){
+
+    .header_menu .myPage .open_mypage_wrap .open_mypage{height: auto;}
+    .open_mypage_wrap .open_mypage .input_form{display: block;}
+    .input_form .login{width: 100%;}
+    .input_form .join_info{border-left: none; width: 100%; margin-top: 20px; padding: 0 30px 0 40px;}
+    .action_btn5{position: relative;}
+
+
   
     .mid_img6 .mid_inner .info_box{text-align: center;}
     .mid_img6 .mid_inner .info_box ul li p{display: none;}
@@ -213,8 +223,16 @@
     .mid_img3 .inner_con img{width: 130%;}
 }
 
+@media screen and (max-width: 450px){
+    .header_menu .myPage .open_mypage_wrap{padding: 15px 15px;}
+}
+
+
 
 @media screen and (max-width: 400px){
+    .header_menu .myPage .open_mypage_wrap .open_mypage{padding: 20px 0;}
+    .input_form .login{padding: 0 20px 0 20px;}
+    .input_form .join_info{padding: 0 20px 0 20px;}
 
     .main_menu .menu_list ul .list_menus{padding: 23px 10px;}
     .main_menu .menu_list ul .list_menus a{font-size: 15px;}
@@ -258,6 +276,12 @@
 }
 
 @media screen and (max-width: 350px){
+
+    .input_form .login form input{height: 35px;}
+    .input_form .login .email_box{margin-bottom: 10px;}
+    .action_btn5{margin-top: 10px; min-height: auto;}
+    .action_btn5 span{line-height: 36px;}
+
     .banner_text_wrap .action_btn3 span{font-size: 13px;}
     .action_btn2 span{font-size: 13px;}
     .action_btn span{font-size: 13px;}

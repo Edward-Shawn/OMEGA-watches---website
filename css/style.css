@@ -181,12 +181,14 @@ body,html{overflow-x: hidden;}
 .header_menu .myPage .open_mypage_wrap .open_mypage{box-sizing: border-box; padding: 40px 0px; width: 680px; height: 350px; background: rgb(255, 255, 255); border: 1px solid rgb(214, 214, 214);}
 .open_mypage_wrap .open_mypage .input_form{width: 100%; height: 100%; display: flex;}
 
-.input_form h4{margin-bottom: 20px; color: #555; font-weight: 500; font-family: 'Jost', sans-serif; }
+.input_form h4{display: inline-block; margin-bottom: 20px; color: #555; font-weight: 500; font-family: 'Jost', sans-serif; }
 .input_form p{font-size: 14px; font-family: 'Jost', sans-serif; letter-spacing: 1px; color: #555;}
 .input_form .form_wrap{position: relative; height: 100%;}
 .input_form .form_wrap.a1{animation-name: a1; animation-duration:0.5s;}
 
 .input_form .form_wrap.a2{animation-name: a2; animation-duration:0.7s;}
+
+.form_wrap.a1 .close{float: right; color: #c40d2e; font-size: 20px; margin-top: -5px;}
 
 @keyframes a1 { 0% {top: 30px; opacity: 0;}  100% {top:0; opacity: 1;} }
 @keyframes a2 { 0% {top: 30px; opacity: 0;}  100% {top:0; opacity: 1;} }

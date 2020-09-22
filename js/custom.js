@@ -47,6 +47,10 @@ $(document).ready(function(){
         $(".open_mypage_wrap").css('display','none');
     })
 
+    $(".close").click(function(){
+        $(".open_mypage_wrap").css('display','none');
+    })
+
    
     $(".indicator_play").click(function(){
 
@@ -123,6 +127,11 @@ $(document).ready(function(){
         
     
 
+    if(windowWidth < 640){
+        $(".close").css('display','block');
+      }else{
+        $(".close").css('display','none');
+      }
 
     
     var windowWidth = $(window).width();
@@ -150,6 +159,11 @@ $(document).ready(function(){
             $(".sub_menu").css('display','table');
           }
           
+          if(windowWidth < 640){
+            $(".close").css('display','block');
+          }else{
+            $(".close").css('display','none');
+          }
          
     })
 
